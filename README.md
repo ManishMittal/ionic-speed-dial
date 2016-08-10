@@ -47,6 +47,6 @@ For this to work the following conditions must apply:
 * The element you use this directive must be clickable.
 * The directive requires an inner attribute "funhandler" to be set on the element to manage the submenus click events.
 * The directive expects an inner attribute "config" to define the basic configuration .
-`
+
 
 
