@@ -17,7 +17,7 @@ bower ionic-spped-dial
 ```
 
 
-Include `ispeed-dial.js`  in your index.html:
+Include `speed-dial.js`  in your index.html:
 
 ```html
 
