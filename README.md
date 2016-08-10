@@ -48,5 +48,11 @@ For this to work the following conditions must apply:
 * The directive requires an inner attribute "funhandler" to be set on the element to manage the submenus click events.
 * The directive expects an inner attribute "config" to define the basic configuration .
 
-
+Add the below directive to your template file. 
+```
+<speed-dial funhandler="speedHander(data);" config="speedDialConfig"></speed-dial>
+```
+#### Config
+* __menuImage__: Img url for for main floating icon
+* __submenus__: Ionic icon name separated by comma for sub item icons . e.g`['ion-funnel','ion-map']`
 
