@@ -21,6 +21,10 @@
     "fly-menu",
     "floating-menu"
   ],
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/ManishMittal/ionic-speed-dial.git"
+  },
   "authors": [
     "manishmittal"
   ],
