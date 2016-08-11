@@ -1,35 +1,30 @@
 {
   "name": "ionic-speed-dial",
-  "description": "Fly icons for ionic platform",
+  "authors": [
+    "ManishMittal"
+  ],
+  "description": "Speed dial menu for ionic platform",
   "main": ["src/js/speed-dial.js",
   "src/scss/speed-dial.scss"
   ],
-  "moduleType": [
-    "amd",
-    "globals",
+  "moduleType": [   
     "node"
   ],
   "keywords": [
-    "ionic-speed-dilal",
-    "floating",
-    "fly",
-    "butoon",
+    "ionic",
+    "speed",
+    "dial",
     "menu",
-    "icon",
-    "fly-icon",
-    "floating-icon",
-    "fly-menu",
-    "floating-menu"
+    "ionic-speed-dial",
+    "ionic-speed-dial-menu"
   ],
   "repository": {
         "type": "git",
         "url": "https://github.com/ManishMittal/ionic-speed-dial.git"
-  },
-  "authors": [
-    "manishmittal"
-  ],
+  },  
   "license": "MIT",
   "homepage": "https://github.com/ManishMittal/ionic-speed-dial",
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
