@@ -1,4 +1,4 @@
-# ionic-spped-dial
+# ionic-speed-dial
 
 Fly icons for ionic platform.
 
