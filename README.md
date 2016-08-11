@@ -13,7 +13,7 @@ Fly icons for ionic platform.
 
 Get the files from github or install from bower:
 ```
-bower ionic-spped-dial
+bower install ionic-speed-dial
 ```
 
 
