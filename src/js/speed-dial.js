@@ -1,35 +1,40 @@
 (function(){
 	angular.module('ionic-speed-dial', [])
-	.directive('speedDial',function(){
-		return {
-			scope: {
-				config:'=',
-				funhandler:'&'
-			},
-			restrict: 'E',
-			controller:function($scope) {
-				var utils = this;
-				$scope.speedfun = function(index){
-					$scope.funhandler({data:index});
-					if($scope.status) $scope.status = false;
-				}
-			},
+.directive('speedDial',function(){
 
-			template:'<div class="ostSpeedDial" >'
+	return {
+		scope: {
+			config:'=',
+			funhandler:'&'
+		},
+		restrict: 'E',
+		controller:function($scope) {
+			var utils = this;
+			$scope.config.menuImage = $scope.config.menuImage || 'ion-plus';
+			$scope.config.menuBackground = $scope.config.menuBackground || '#ff1744';
+			$scope.config.menuColor = $scope.config.menuColor || '#ffffff';
+			
+			$scope.speedfun = function(index){
+				$scope.funhandler({data:index});				
+				if($scope.status) $scope.status = false;
+			}
+		},
 
-			+'<input type="checkbox" ng-model="status" id="menu_opener_id" class="menu_opener">'
+		template:'<div class="ostSpeedDial" >'
 
-			+'<label for="menu_opener_id" class="menu_opener_label"><img ng-src="{{config.menuImage}}" class="speedmenu" ></label>'
+		+'<input type="checkbox" ng-model="status" id="menu_opener_id" class="menu_opener">'
+		+'</input>'
+		+'<label for="menu_opener_id" class="menu_opener_label" ng-style="{ \'background-color\': config.menuBackground }"><i class="ion {{config.menuImage}} speedmenu" ng-style="{\'color\': config.menuColor }"></i></label>'
 
-			+'<a class="link_{{$index+1}} link_general" ng-click="speedfun($index+1);" ng-repeat="mObj in config.submenus"  ><i class="ion {{mObj}}"></i></a>'
+		+'<a ng-repeat="mObj in config.submenus" class="link_{{$index+1}} link_general" ng-click="speedfun($index+1);" ng-style="{ \'background-color\':mObj.background || config.subMenuBackground }">'
+		+'<i class="ion {{mObj.icon}}" ng-style="{\'color\': mObj.color ||config.menuColor }"></i></a>'
+		
 
-			+'</input>'
+		+'<div>',
 
-			+'<div>',
+		replace: true
 
-			replace: true
+	};
 
-		};
-
-	});
+});
 });
