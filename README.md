@@ -61,3 +61,22 @@ Add the below directive to your template file.
 * __subMenuBackground__: Default Background color for submenus floating icon .  e.g. `#ff1744` 
 * __submenus__: Submenu objects separated by comma for sub items  . e.g`submenus:[{icon:'ion-bag',background :'#d500f9',color:''},{icon:'ion-map',background :'#64ffda',color:'#000000'}]`
 
+Example of config and event override of menu and submenu in controller.
+```
+ $scope.speedDialConfig ={
+	status:true,
+	menuImage:'ion-plus',
+	menuBackground :'#ff1744',
+	menuColor:'#ffffff',
+	subMenuBackground : '#ff1744',
+	submenus:[{icon:'ion-bag',background :'#d500f9',color:''},{icon:'ion-map',background :'#64ffda',color:'#000000'}]
+ }
+ $scope.speedHander = function(subMenuindex){
+	switch(subMenuindex){
+		case 1: console.log('submenu1');break;
+		case 2: console.log('submenu2');break;
+		default : break;
+	}
+ }
+})
+```
