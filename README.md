@@ -55,9 +55,9 @@ Add the below directive to your template file.
 ```
 #### Config
 * __status__: Menu open or close status [true/false]
-* __menuImage__: Icon name for main floating icon . e.g. `ion-plus` 
-*__menuBackground__: Background color for main floating icon .  e.g. `#ff1744` 
-* __menuColor__: Icon color for main floating icon . e.g. `#ffffff`
+* __menuImage__: Icon name for main floating icon . e.g. ```ion-plus``` 
+*__menuBackground__: Background color for main floating icon .  e.g. ```#ff1744``` 
+* __menuColor__: Icon color for main floating icon . e.g. ```#ffffff```
 *__subMenuBackground__: Default Background color for submenus floating icon .  e.g. `#ff1744` 
 * __submenus__: Submenu objects separated by comma for sub items  . e.g`submenus:[{icon:'ion-bag',background :'#d500f9',color:''},{icon:'ion-map',background :'#64ffda',color:'#000000'}]`
 
