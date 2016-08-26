@@ -17,11 +17,12 @@ bower install ionic-speed-dial
 ```
 
 
-Include `speed-dial.js`  in your index.html:
+Include `speed-dial.js` and `speed-dial.scss`  in your index.html:
 
 ```html
 
 <script src="lib/ionic-speed-dial/src/js/speed-dial.js"></script>
+<link href="lib/ionic-speed-dial/src/scss/speed-dial.scss" rel="stylesheet">
 
 ```
 
@@ -53,6 +54,10 @@ Add the below directive to your template file.
 <speed-dial funhandler="speedHander(data);" config="speedDialConfig"></speed-dial>
 ```
 #### Config
-* __menuImage__: Img url for for main floating icon
-* __submenus__: Ionic icon name separated by comma for sub item icons . e.g`['ion-funnel','ion-map']`
+* __status__: Menu open or close status [true/false]
+* __menuImage__: Icon name for main floating icon . e.g. `ion-plus` 
+*__menuBackground__: Background color for main floating icon .  e.g. `#ff1744` 
+* __menuColor__: Icon color for main floating icon . e.g. `#ffffff`
+*__subMenuBackground__: Default Background color for submenus floating icon .  e.g. `#ff1744` 
+* __submenus__: Submenu objects separated by comma for sub items  . e.g`submenus:[{icon:'ion-bag',background :'#d500f9',color:''},{icon:'ion-map',background :'#64ffda',color:'#000000'}]`
 
