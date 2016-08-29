@@ -30,7 +30,7 @@ Include `speed-dial.scss` in your ionic.app.scss:
 ```
 
 
-Add the module `ionic-speed-dial` to your application dependencies:
+Add the module `ionic-speed-dial` to your application dependencies in your app.js:
 
 ```javascript
 
@@ -81,5 +81,4 @@ Example of config and event override of menu and submenu in controller.
 		default : break;
 	}
  }
-})
 ```
