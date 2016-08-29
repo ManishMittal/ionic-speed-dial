@@ -1,4 +1,4 @@
-angular.module('starter.directives', [])
+angular.module('ionic-speed-dial', [])
 .directive('speedDial',function(){
 
 	return {
