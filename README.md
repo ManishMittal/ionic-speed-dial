@@ -1,6 +1,6 @@
 # ionic-speed-dial
 
-Fly icons for ionic platform.
+Sass based Animted Fly Menus for ionic platform.
 
 ## Features
 
