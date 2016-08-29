@@ -1,4 +1,4 @@
-angular.module('ionic-speed-dial', [])
+angular.module('starter.directives', [])
 .directive('speedDial',function(){
 
 	return {
@@ -9,10 +9,11 @@ angular.module('ionic-speed-dial', [])
 		restrict: 'E',
 		controller:function($scope) {
 			var utils = this;
+			$scope.config=$scope.config || {menuImage:'ion-plus',menuBackground:'#ff1744',menuColor:'#ffffff',subMenuBackground:''}
 			$scope.config.menuImage = $scope.config.menuImage || 'ion-plus';
 			$scope.config.menuBackground = $scope.config.menuBackground || '#ff1744';
 			$scope.config.menuColor = $scope.config.menuColor || '#ffffff';
-			
+			$scope.config.subMenuBackground = $scope.config.subMenuBackground || '#ff1744';
 			$scope.speedfun = function(index){
 				$scope.funhandler({data:index});				
 				if($scope.status) $scope.status = false;
