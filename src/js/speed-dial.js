@@ -1,5 +1,4 @@
-(function(){
-	angular.module('ionic-speed-dial', [])
+angular.module('ionic-speed-dial', [])
 .directive('speedDial',function(){
 
 	return {
@@ -36,5 +35,4 @@
 
 	};
 
-});
 });
