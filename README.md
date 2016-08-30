@@ -25,7 +25,7 @@ Include `speed-dial.js` in your index.html:
 ```
 Include `speed-dial.scss` in your ionic.app.scss:
 ```html
-@import "www/lib/ionic-speed-dial/src/scss/speed-dial.scss"
+@import "www/lib/ionic-speed-dial/src/scss/speed-dial"
 
 ```
 
