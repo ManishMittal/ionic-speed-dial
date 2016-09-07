@@ -5,7 +5,7 @@ Sass based Animted Fly Menus for ionic platform.
 ## Features
 
 * Multiple Submenus
-* Mange the click events of submenus
+* Manage the click events of submenus
 * Dynamic ionic icons
 
 
